@@ -50,7 +50,7 @@ app.get('/add-data', (req, res) => {
     connection.query('INSERT INTO data SET ?', newData, (error, results, fields) => {
       if (error) {
         console.error('Error executing query:', error);
-        res.status(500).send('Internal Server Error');
+        res.status(500).send(error);
         return;
       }
   
