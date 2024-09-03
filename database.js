@@ -3,10 +3,10 @@ const mysql = require('mysql');
 
 // Buat koneksi ke database MySQL
 const connection = mysql.createConnection({
-  host: 'localhost',
+  host: 'mysql.railway.internal',
   user: 'root',
-  password: '', // Karena Anda tidak menggunakan password
-  database: 'monitorsuhu' // Nama database yang Anda gunakan
+  password: 'rVCPYlSXYNpIOxRBQWwWLwYLIeYUjhCW', // Karena Anda tidak menggunakan password
+  database: 'railway' // Nama database yang Anda gunakan
 });
 
 // Coba membuat koneksi

@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 // Endpoint untuk mengambil data dari database
 app.get('/data', (req, res) => {
     // Mengubah query SQL untuk mengambil data terbaru berdasarkan ID
-    connection.query('SELECT * FROM data ORDER BY id DESC LIMIT 1', (error, results, fields) => {
+    connection.query('SELECT * FROM monitor ORDER BY id DESC LIMIT 1', (error, results, fields) => {
       if (error) {
         console.error('Error executing query:', error);
         res.status(500).send('Internal Server Error');
@@ -47,7 +47,7 @@ app.get('/add-data', (req, res) => {
     };
   
     // Query untuk menambahkan data baru ke tabel 'data'
-    connection.query('INSERT INTO data SET ?', newData, (error, results, fields) => {
+    connection.query('INSERT INTO monitor SET ?', newData, (error, results, fields) => {
       if (error) {
         console.error('Error executing query:', error);
         res.status(500).send('Internal Server Error');
