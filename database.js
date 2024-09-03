@@ -6,7 +6,7 @@ const connection = mysql.createConnection({
   port: 3306,
   host: 'bpj12v8wgtwt3lnbmu8s-mysql.services.clever-cloud.com',
   user: 'ux29f5wz9ypwlmus',
-  password: 'ux29f5wz9ypwlmus', // Karena Anda tidak menggunakan password
+  password: 'nlbCODddsiYdgIwLOTr0', // Karena Anda tidak menggunakan password
   database: 'bpj12v8wgtwt3lnbmu8s' // Nama database yang Anda gunakan
 });
 
