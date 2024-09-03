@@ -3,10 +3,11 @@ const mysql = require('mysql');
 
 // Buat koneksi ke database MySQL
 const connection = mysql.createConnection({
-  host: 'mysql.railway.internal',
-  user: 'root',
-  password: 'rVCPYlSXYNpIOxRBQWwWLwYLIeYUjhCW', // Karena Anda tidak menggunakan password
-  database: 'railway' // Nama database yang Anda gunakan
+  port: 3306,
+  host: 'bpj12v8wgtwt3lnbmu8s-mysql.services.clever-cloud.com',
+  user: 'ux29f5wz9ypwlmus',
+  password: 'ux29f5wz9ypwlmus', // Karena Anda tidak menggunakan password
+  database: 'bpj12v8wgtwt3lnbmu8s' // Nama database yang Anda gunakan
 });
 
 // Coba membuat koneksi
